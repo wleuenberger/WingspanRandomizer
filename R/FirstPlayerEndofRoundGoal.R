@@ -4,7 +4,7 @@ FirstPlayer <- function(colors = c('teal', 'red', 'blue', 'green', 'yellow', 'pu
   return(Order)
 }
 
-FirstPlayer()
+# FirstPlayer()
 
 BaseGoals <- data.frame(
   FirstSide = c("Total birds", 
@@ -66,5 +66,5 @@ EndofRoundGoals <- function(Goals = NorthAmericaEuropeOceania){
   print(paste0("Fourth goal: ", Goals[Token[4], Side[4]]))
 }  
 
-EndofRoundGoals()  
+# EndofRoundGoals()  
         
