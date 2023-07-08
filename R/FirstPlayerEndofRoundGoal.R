@@ -1,3 +1,4 @@
+#' @export
 FirstPlayer <- function(colors = c('teal', 'red', 'blue', 'green', 'yellow', 'purple')){
   Order = sample(colors)
   return(Order)
@@ -54,7 +55,8 @@ NorthAmerica <-
 
 EuropeOceana <- 
   rbind(EuropeGoals, OceaniaGoals)
-  
+ 
+#' @export 
 EndofRoundGoals <- function(Goals = NorthAmericaEuropeOceania){
   Token <- sample(1:nrow(Goals), 4)
   Side <- sample(1:2, 4, replace = TRUE)
